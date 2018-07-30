@@ -23,3 +23,5 @@ nbdist/
 .nb-gradle/
 target/
 .DS_Store
+.mvn
+cloud/.DS_Store
