@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+debug: true
+
+spring:
+  application:
+    name: cloud-comsumer
+  devtools:
+    restart:
+      enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+

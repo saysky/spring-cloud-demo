@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+debug: true
+
+spring:
+  application:
+    name: cloud-producer
+  datasource:
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/summer?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+  devtools:
+    restart:
+      enabled: true
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.liuyanzhao.cloud.api.model
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
